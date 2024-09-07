@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrified LinkTree</title>
+    <meta name="description" content="Nutrified - The Pawsitive Choice">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+    :root {
+        --primary-blue: #329696;
+        --secondary-blue: #64CDCD;
+        --primary-green: #4CAF50;
+        --background-color: #F5F5F5;
+        --text-color: #333333;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        min-height: 100vh;
+        color: var(--text-color);
+    }
+
+    .container {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .tagline {
+        text-align: center;
+        margin-bottom: 20px;
+        color: var(--primary-blue);
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .about {
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .link-group {
+        margin-bottom: 30px;
+    }
+
+    .group-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: var(--primary-blue);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .link-item {
+        background-color: #fff;
+        padding: 15px;
+        text-decoration: none;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        border: 2px solid var(--secondary-blue);
+    }
+
+    .link-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: var(--secondary-blue);
+        color: white;
+    }
+
+    .link-item i {
+        margin-right: 15px;
+        font-size: 24px;
+        color: var(--primary-blue);
+        transition: color 0.3s ease;
+    }
+
+    .link-item:hover i {
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="img/nutrified.png" alt="Nutrified Logo" class="logo">
+        </div>
+        <p class="tagline">The Pawsitive Choice</p>
+        <p class="about">At Nutrified, we're passionate about enhancing the health and happiness of pets through all-natural, sustainable products. Our Pure Goodness line embodies our commitment to providing only the best nature has to offer, ensuring that every wag, purr, and chirp is backed by optimal nutrition and care.</p>
+        <div class="link-group">
+            <h2 class="group-title">Our Websites/Projects</h2>
+            <div class="link-list">
+                <a href="https://www.nutrified.com" class="link-item"><i class="fas fa-globe"></i>Website</a>
+                <a href="https://www.mineo.cy" class="link-item"><i class="fas fa-building"></i>Mineo Minerals</a>
+                <a href="https://www.ampawssadors.com" class="link-item"><i class="fas fa-paw"></i>Ampawssadors</a>
+                <a href="https://gallery.ampawssadors.com" class="link-item"><i class="fas fa-images"></i>Ampawssadors Gallery</a>
+                <a href="https://www.tinypaws.com" class="link-item"><i class="fas fa-heart"></i>TinyPaws (Launching Soon)</a>
+            </div>
+        </div>
+        <div class="link-group">
+            <h2 class="group-title">Socials</h2>
+            <div class="link-list">
+                <a href="https://www.youtube.com/@nutrified_vet" class="link-item"><i class="fab fa-youtube"></i>YouTube</a>
+                <a href="https://www.linkedin.com/company/nutrified/posts/?feedView=all" class="link-item"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="https://www.instagram.com/nutrified.vet" class="link-item"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://www.tiktok.com/@nutrified.vet" class="link-item"><i class="fab fa-tiktok"></i>TikTok</a>
+                <a href="https://x.com/nutrified_vet" class="link-item"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://www.facebook.com/nutrified.vet" class="link-item"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://www.pinterest.com/nutrified_vet/" class="link-item"><i class="fab fa-pinterest"></i>Pinterest</a>
+                <a href="https://www.threads.net/@nutrified.vet" class="link-item"><i class="fas fa-at"></i>Threads</a>
+            </div>
+        </div>
+        <div class="link-group">
+            <h2 class="group-title">Contact</h2>
+            <div class="link-list">
+                <a href="https://wa.me/35725000094" class="link-item"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                <a href="mailto:info@nutrified.com" class="link-item"><i class="fa-solid fa-envelope"></i>Email</a>
+            </div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.link-item');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                setTimeout(() => {
+                    window.open(this.href, '_blank');
+                }, 200);
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>
