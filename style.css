@@ -1,0 +1,103 @@
+    :root {
+        --primary-blue: #329696;
+        --secondary-blue: #64CDCD;
+        --primary-green: #4CAF50;
+        --background-color: #F5F5F5;
+        --text-color: #333333;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        min-height: 100vh;
+        color: var(--text-color);
+    }
+
+    .container {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .tagline {
+        text-align: center;
+        margin-bottom: 20px;
+        color: var(--primary-blue);
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .about {
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .link-group {
+        margin-bottom: 30px;
+    }
+
+    .group-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: var(--primary-blue);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .link-item {
+        background-color: #fff;
+        padding: 15px;
+        text-decoration: none;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        border: 2px solid var(--secondary-blue);
+    }
+
+    .link-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: var(--secondary-blue);
+        color: white;
+    }
+
+    .link-item i {
+        margin-right: 15px;
+        font-size: 24px;
+        color: var(--primary-blue);
+        transition: color 0.3s ease;
+    }
+
+    .link-item:hover i {
+        color: white;
+    }
